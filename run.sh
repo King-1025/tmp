@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ROOT=$(pwd)
-RELEASE=$ROOT/app/build/outputs/apk/common/release
+RELEASE=$ROOT/app/build/outputs/apk
 OUTPUT=$ROOT/output
 KS=$ROOT/extra/debug.jks
 KSP=$ROOT/extra/debug_ks_pass
@@ -9,7 +9,7 @@ KSP=$ROOT/extra/debug_ks_pass
 pip install requests
 sudo apt install apksigner -y
 
-$ROOT/gradlew :app:assembleRelease
+$ROOT/gradlew :app:build
 
 mkdir $OUTPUT
 
