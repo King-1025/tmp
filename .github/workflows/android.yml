@@ -17,8 +17,8 @@ jobs:
 
     - name: 配置 Python 3.7
       uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
+      with:
+        python-version: 3.7
 
     - name: do run.sh 
       run: ./run.sh
