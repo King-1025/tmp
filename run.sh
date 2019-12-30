@@ -7,6 +7,7 @@ KS=$ROOT/extra/debug.jks
 KSP=$ROOT/extra/debug_ks_pass
 
 pip install requests
+sudo apt install apksigner -y
 
 $ROOT/gradlew :app:assembleRelease
 
